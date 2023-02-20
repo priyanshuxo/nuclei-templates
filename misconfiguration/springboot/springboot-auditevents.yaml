@@ -20,7 +20,11 @@ requests:
   - method: GET
     path:
       - "{{BaseURL}}/auditevents"
+      - "{{BaseURL}}/api/auditevents"
+      - "{{BaseURL}}/rest/auditevents"
       - "{{BaseURL}}/actuator/auditevents"
+      - "{{BaseURL}}/api/actuator/auditevents"
+      - "{{BaseURL}}/rest/actuator/auditevents"
 
     stop-at-first-match: true
     matchers-condition: and
